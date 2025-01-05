@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "veridiancopy",
+  "version": "${version}",
+  "name": "VeridianCopy",
+  "description": "",
+  "authors": [
+    "Sora"
+  ],
+  "contact": {
+    "homepage": ""
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/veridiancopy/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "me.sora.veridiancopy.fabric.VeridiancopyFabric"
+    ],
+    "client": [
+      "me.sora.veridiancopy.fabric.client.VeridiancopyFabricClient"
+    ]
+  },
+  "mixins": [
+    "veridiancopy.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.9",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "architectury": ">=9.2.14",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
